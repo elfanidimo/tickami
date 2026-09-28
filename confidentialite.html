@@ -7,7 +7,8 @@
 <meta name="description" content="Politique de confidentialité — Tickami">
 <link rel="canonical" href="https://elfanidimo.github.io/tickami/confidentialite.html">
 <link rel="alternate" hreflang="fr" href="https://elfanidimo.github.io/tickami/confidentialite.html"><link rel="alternate" hreflang="en" href="https://elfanidimo.github.io/tickami/en/privacy.html">
-<link rel="icon" href="icon.png">
+<link rel="icon" href="logo-mark.png">
+<link rel="apple-touch-icon" href="icon.png">
 <style>
 :root {
   --ink: #17191E; --paper: #F4F1EA; --surface: #FFFFFF; --border: #E3DED3;
@@ -28,6 +29,12 @@ main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
 header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 32px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 600; font-size: 20px; }
 .brand img { width: 36px; height: 36px; border-radius: 9px; }
+.hero { text-align: center; margin: 0 0 32px; }
+.hero img { display: block; width: 200px; height: auto; margin: 0 auto 24px; border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(23, 25, 30, 0.18); }
+@media (prefers-color-scheme: dark) { .hero img { box-shadow: 0 0 0 1px var(--border); } }
+.hero .updated { margin: 0; }
+.back { margin: 0 0 24px; }
 a { color: var(--accent); }
 .lang { font-size: 14px; }
 h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; }
@@ -47,12 +54,15 @@ footer nav { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
 <body>
 <main>
 <header>
-  <a class="brand" href="index.html"><img src="icon.png" alt="">Tickami</a>
+  <a class="brand" href="index.html"><img src="logo-mark.png" alt="">Tickami</a>
   <a class="lang" href="en/privacy.html" hreflang="en" lang="en">English</a>
 </header>
-<p><a href="index.html">← Retour à l'accueil</a></p>
-<h1>Politique de confidentialité</h1>
-<p class="updated">Dernière mise à jour : 27 septembre 2026</p>
+<p class="back"><a href="index.html">← Retour à l'accueil</a></p>
+<div class="hero">
+  <img src="logo.png" alt="Tickami" width="200" height="233">
+  <h1>Politique de confidentialité</h1>
+  <p class="updated">Dernière mise à jour : 28 septembre 2026</p>
+</div>
 <div class="legal"><h2>En bref</h2><p>Tickami range vos factures ; vos données servent uniquement à cela. Pas de publicité, pas de traçage, aucune revente. Hébergement dans l&#x27;Union européenne. L&#x27;analyse par IA ne se fait qu&#x27;avec votre accord.</p><h2>1. Responsable du traitement</h2><p>Mohamed El Moukhtar EL FANIDI, éditeur de Tickami, à titre individuel.</p><p>Contact : tickami.app@gmail.com</p><h2>2. Données traitées</h2><p>• Compte : adresse e-mail, prénom et nom, identifiant du compte Apple, Google ou Microsoft si vous l&#x27;utilisez.</p><p>• Factures : photos et PDF, fournisseur, numéro, dates, montants, TVA, articles, catégorie, notes.</p><p>• Organisation : vos espaces (nom, type, couleur) et le rattachement des factures.</p><p>• Réglages : langue, validation automatique, date de votre accord à l&#x27;analyse par IA.</p><p>• Journal d&#x27;analyse : date, modèle d&#x27;IA utilisé et volume traité, pour limiter l&#x27;usage et suivre les coûts.</p><p>• Abonnement : offre choisie, dates d&#x27;essai, de renouvellement et de fin. Tickami ne reçoit jamais vos coordonnées bancaires : le paiement est géré par Apple.</p><h2>3. Données qui restent sur votre iPhone</h2><p>Recherches récentes, derniers espaces utilisés, une copie de votre profil et de vos espaces (pour ouvrir l&#x27;app sans réseau, effacée à la déconnexion) et, en cas de coupure réseau, factures scannées en attente d&#x27;envoi. Face ID reste géré par iOS : Tickami ne reçoit jamais vos données biométriques.</p><h2>4. Pourquoi et sur quelle base</h2><p>• Fournir le service (compte, stockage, classement, recherche, totaux, export) : exécution des conditions d&#x27;utilisation.</p><p>• Gérer votre abonnement Tickami+ et les limites de l&#x27;offre Gratuite : exécution des conditions d&#x27;utilisation.</p><p>• Analyser vos factures par IA : votre consentement, retirable à tout moment dans le Profil. Sans consentement, rien n&#x27;est envoyé à l&#x27;IA et vous saisissez les informations vous-même.</p><p>• Envoyer les e-mails de connexion : exécution des conditions d&#x27;utilisation.</p><p>• Limiter les abus (60 analyses par heure au plus) : intérêt légitime.</p><h2>5. Qui reçoit vos données</h2><p>• Supabase : hébergement du compte, de la base de données et des fichiers, dans l&#x27;Union européenne (Irlande).</p><p>• Anthropic (API Claude) : analyse des factures, seulement avec votre accord. Anthropic reçoit uniquement les images ou PDF à analyser, sans votre nom ni votre e-mail, et n&#x27;utilise pas les données reçues par son API pour entraîner ses modèles.</p><p>• Google (Gmail) : envoi des e-mails de connexion.</p><p>• Apple, Google, Microsoft : connexion avec leur compte, seulement si vous la choisissez.</p><p>• Apple : vente et paiement de l&#x27;abonnement Tickami+.</p><p>• RevenueCat : suivi de l&#x27;abonnement (achats, renouvellements, fin), sous votre identifiant Tickami, sans votre nom ni votre e-mail.</p><p>Anthropic, Google et RevenueCat peuvent traiter des données aux États-Unis. Ces transferts sont encadrés par les garanties prévues par le RGPD (clauses contractuelles types de la Commission européenne).</p><h2>6. Durée de conservation</h2><p>• Compte et factures : tant que le compte existe.</p><p>• Factures supprimées : 30 jours dans la corbeille, puis effacement définitif automatique.</p><p>• Suppression du compte : effacement immédiat et définitif du compte, des factures, des fichiers et du journal d&#x27;analyse.</p><h2>7. Vos droits</h2><p>Vous pouvez accéder à vos données, les rectifier, les effacer, en obtenir une copie, vous opposer à un traitement ou retirer votre consentement.</p><p>Directement dans l&#x27;app : modifier une facture, exporter vos factures (Profil → Exporter), retirer l&#x27;accord à l&#x27;IA, supprimer votre compte. Pour toute autre demande, écrivez à tickami.app@gmail.com : réponse sous un mois. Vous pouvez aussi saisir la CNIL (www.cnil.fr).</p><h2>8. Sécurité</h2><p>Échanges chiffrés (HTTPS), fichiers dans un stockage privé, accès aux données réservé à leur propriétaire par des règles en base, liens d&#x27;affichage temporaires de 60 minutes, verrouillage Face ID optionnel.</p><h2>9. Âge minimum</h2><p>Tickami s&#x27;adresse aux personnes de 15 ans et plus.</p><h2>10. Modifications</h2><p>En cas de changement important de cette politique, vous serez informé dans l&#x27;app avant son entrée en vigueur.</p></div>
 <footer>
   <nav>

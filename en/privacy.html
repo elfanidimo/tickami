@@ -7,7 +7,8 @@
 <meta name="description" content="Privacy policy — Tickami">
 <link rel="canonical" href="https://elfanidimo.github.io/tickami/en/privacy.html">
 <link rel="alternate" hreflang="fr" href="https://elfanidimo.github.io/tickami/confidentialite.html"><link rel="alternate" hreflang="en" href="https://elfanidimo.github.io/tickami/en/privacy.html">
-<link rel="icon" href="../icon.png">
+<link rel="icon" href="../logo-mark.png">
+<link rel="apple-touch-icon" href="../icon.png">
 <style>
 :root {
   --ink: #17191E; --paper: #F4F1EA; --surface: #FFFFFF; --border: #E3DED3;
@@ -28,6 +29,12 @@ main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
 header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 32px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 600; font-size: 20px; }
 .brand img { width: 36px; height: 36px; border-radius: 9px; }
+.hero { text-align: center; margin: 0 0 32px; }
+.hero img { display: block; width: 200px; height: auto; margin: 0 auto 24px; border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(23, 25, 30, 0.18); }
+@media (prefers-color-scheme: dark) { .hero img { box-shadow: 0 0 0 1px var(--border); } }
+.hero .updated { margin: 0; }
+.back { margin: 0 0 24px; }
 a { color: var(--accent); }
 .lang { font-size: 14px; }
 h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; }
@@ -47,12 +54,15 @@ footer nav { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
 <body>
 <main>
 <header>
-  <a class="brand" href="../en/index.html"><img src="../icon.png" alt="">Tickami</a>
+  <a class="brand" href="../en/index.html"><img src="../logo-mark.png" alt="">Tickami</a>
   <a class="lang" href="../confidentialite.html" hreflang="fr" lang="fr">Français</a>
 </header>
-<p><a href="../en/index.html">← Back to home</a></p>
-<h1>Privacy policy</h1>
-<p class="updated">Last updated: September 27, 2026</p>
+<p class="back"><a href="../en/index.html">← Back to home</a></p>
+<div class="hero">
+  <img src="../logo.png" alt="Tickami" width="200" height="233">
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated: September 28, 2026</p>
+</div>
 <div class="legal"><h2>In short</h2><p>Tickami organises your invoices; your data is used for that alone. No ads, no tracking, never sold. Hosted in the European Union. AI analysis only happens with your consent.</p><h2>1. Data controller</h2><p>Mohamed El Moukhtar EL FANIDI, publisher of Tickami, as an individual.</p><p>Contact: tickami.app@gmail.com</p><h2>2. Data processed</h2><p>• Account: email address, first and last name, Apple, Google or Microsoft account identifier if you use one.</p><p>• Invoices: photos and PDFs, supplier, number, dates, amounts, VAT, items, category, notes.</p><p>• Organisation: your spaces (name, type, colour) and which invoices belong to them.</p><p>• Settings: language, auto-validation, date of your consent to AI analysis.</p><p>• Analysis log: date, AI model used and volume processed, to limit usage and track costs.</p><p>• Subscription: chosen plan, trial, renewal and end dates. Tickami never receives your payment details: payment is handled by Apple.</p><h2>3. Data that stays on your iPhone</h2><p>Recent searches, last spaces used, a copy of your profile and spaces (to open the app without a connection, erased when you sign out) and, when there is no connection, scanned invoices waiting to be sent. Face ID is handled by iOS: Tickami never receives your biometric data.</p><h2>4. Why, and on what legal basis</h2><p>• Providing the service (account, storage, organisation, search, totals, export): performance of the terms of use.</p><p>• Managing your Tickami+ subscription and the Free plan limits: performance of the terms of use.</p><p>• Analysing your invoices with AI: your consent, which you can withdraw at any time in Profile. Without consent, nothing is sent to the AI and you enter the information yourself.</p><p>• Sending sign-in emails: performance of the terms of use.</p><p>• Preventing abuse (at most 60 analyses per hour): legitimate interest.</p><h2>5. Who receives your data</h2><p>• Supabase: hosting of the account, database and files, in the European Union (Ireland).</p><p>• Anthropic (Claude API): invoice analysis, only with your consent. Anthropic only receives the images or PDFs to analyse, without your name or email, and does not use data received through its API to train its models.</p><p>• Google (Gmail): sending sign-in emails.</p><p>• Apple, Google, Microsoft: sign-in with their account, only if you choose it.</p><p>• Apple: sale and payment of the Tickami+ subscription.</p><p>• RevenueCat: subscription tracking (purchases, renewals, end), under your Tickami identifier, without your name or email.</p><p>Anthropic, Google and RevenueCat may process data in the United States. These transfers are covered by the safeguards provided by the GDPR (European Commission standard contractual clauses).</p><h2>6. Retention</h2><p>• Account and invoices: as long as the account exists.</p><p>• Deleted invoices: 30 days in the trash, then permanently erased automatically.</p><p>• Account deletion: immediate and permanent erasure of the account, invoices, files and analysis log.</p><h2>7. Your rights</h2><p>You can access, correct and erase your data, obtain a copy of it, object to processing or withdraw your consent.</p><p>Directly in the app: edit an invoice, export your invoices (Profile → Export), withdraw AI consent, delete your account. For any other request, write to tickami.app@gmail.com: answer within one month. You can also contact the CNIL, the French data protection authority (www.cnil.fr).</p><h2>8. Security</h2><p>Encrypted connections (HTTPS), files in private storage, data access restricted to its owner by database rules, temporary display links valid for 60 minutes, optional Face ID lock.</p><h2>9. Minimum age</h2><p>Tickami is intended for people aged 15 and over.</p><h2>10. Changes</h2><p>If this policy changes significantly, you will be informed in the app before the change takes effect.</p></div>
 <footer>
   <nav>

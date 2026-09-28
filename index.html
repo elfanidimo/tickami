@@ -7,7 +7,8 @@
 <meta name="description" content="Tickami range vos factures et tickets de caisse : scan, lecture automatique, espaces perso et pro, totaux et TVA.">
 <link rel="canonical" href="https://elfanidimo.github.io/tickami/index.html">
 <link rel="alternate" hreflang="fr" href="https://elfanidimo.github.io/tickami/index.html"><link rel="alternate" hreflang="en" href="https://elfanidimo.github.io/tickami/en/index.html">
-<link rel="icon" href="icon.png">
+<link rel="icon" href="logo-mark.png">
+<link rel="apple-touch-icon" href="icon.png">
 <style>
 :root {
   --ink: #17191E; --paper: #F4F1EA; --surface: #FFFFFF; --border: #E3DED3;
@@ -28,6 +29,12 @@ main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
 header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 32px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 600; font-size: 20px; }
 .brand img { width: 36px; height: 36px; border-radius: 9px; }
+.hero { text-align: center; margin: 0 0 32px; }
+.hero img { display: block; width: 200px; height: auto; margin: 0 auto 24px; border-radius: 24px;
+  box-shadow: 0 12px 32px rgba(23, 25, 30, 0.18); }
+@media (prefers-color-scheme: dark) { .hero img { box-shadow: 0 0 0 1px var(--border); } }
+.hero .updated { margin: 0; }
+.back { margin: 0 0 24px; }
 a { color: var(--accent); }
 .lang { font-size: 14px; }
 h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; }
@@ -47,9 +54,10 @@ footer nav { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
 <body>
 <main>
 <header>
-  <a class="brand" href="index.html"><img src="icon.png" alt="">Tickami</a>
+  <a class="brand" href="index.html"><img src="logo-mark.png" alt="">Tickami</a>
   <a class="lang" href="en/index.html" hreflang="en" lang="en">English</a>
 </header>
+<div class="hero"><img src="logo.png" alt="Tickami" width="200" height="233"></div>
 <span class="badge">Bientôt sur l&#x27;App Store (iPhone)</span>
 <h1>Vos factures, rangées en un scan.</h1>
 <p class="lead">Tickami range vos factures et tickets de caisse : scan, lecture automatique, espaces perso et pro, totaux et TVA.</p>
