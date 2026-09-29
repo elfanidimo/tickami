@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url><loc>https://tickami.fr/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/"/></url>
+<url><loc>https://tickami.fr/en/</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/"/></url>
+<url><loc>https://tickami.fr/fonctionnalites.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/fonctionnalites.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/features.html"/></url>
+<url><loc>https://tickami.fr/en/features.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/fonctionnalites.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/features.html"/></url>
+<url><loc>https://tickami.fr/tarifs.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/tarifs.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/pricing.html"/></url>
+<url><loc>https://tickami.fr/en/pricing.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/tarifs.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/pricing.html"/></url>
+<url><loc>https://tickami.fr/faq.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/faq.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/faq.html"/></url>
+<url><loc>https://tickami.fr/en/faq.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/faq.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/faq.html"/></url>
+<url><loc>https://tickami.fr/mentions-legales.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/mentions-legales.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/legal-notice.html"/></url>
+<url><loc>https://tickami.fr/en/legal-notice.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/mentions-legales.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/legal-notice.html"/></url>
+<url><loc>https://tickami.fr/cgu.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/cgu.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/terms.html"/></url>
+<url><loc>https://tickami.fr/en/terms.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/cgu.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/terms.html"/></url>
+<url><loc>https://tickami.fr/confidentialite.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/confidentialite.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/privacy.html"/></url>
+<url><loc>https://tickami.fr/en/privacy.html</loc><xhtml:link rel="alternate" hreflang="fr" href="https://tickami.fr/confidentialite.html"/><xhtml:link rel="alternate" hreflang="en" href="https://tickami.fr/en/privacy.html"/></url>
+</urlset>

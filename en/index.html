@@ -2,78 +2,240 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tickami — your invoices, sorted in one scan</title>
-<meta name="description" content="Tickami sorts your invoices and receipts: scanning, automatic reading, personal and work spaces, totals and VAT.">
-<link rel="canonical" href="https://tickami.fr/en/index.html">
-<link rel="alternate" hreflang="fr" href="https://tickami.fr/index.html"><link rel="alternate" hreflang="en" href="https://tickami.fr/en/index.html">
-<link rel="icon" href="../logo-mark.png">
+<meta name="description" content="Scan your invoices and receipts: Tickami reads the supplier, date, net amount, VAT and total, files them in personal or work spaces and works out your recoverable VAT. Free to start.">
+<link rel="canonical" href="https://tickami.fr/en/">
+<link rel="alternate" hreflang="fr" href="https://tickami.fr/"><link rel="alternate" hreflang="en" href="https://tickami.fr/en/"><link rel="alternate" hreflang="x-default" href="https://tickami.fr/">
+<meta name="theme-color" content="#F4F1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tickami">
+<meta property="og:title" content="Tickami — your invoices, sorted in one scan">
+<meta property="og:description" content="Scan your invoices and receipts: Tickami reads the supplier, date, net amount, VAT and total, files them in personal or work spaces and works out your recoverable VAT. Free to start.">
+<meta property="og:url" content="https://tickami.fr/en/">
+<meta property="og:image" content="https://tickami.fr/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../logo-mark.png">
 <link rel="apple-touch-icon" href="../icon.png">
-<style>
-:root {
-  --ink: #17191E; --paper: #F4F1EA; --surface: #FFFFFF; --border: #E3DED3;
-  --text: #17191E; --muted: #5B5F68; --accent: #B4461F; --accent-soft: #F7E1D6;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #17191E; --surface: #22252B; --border: #34373E;
-    --text: #F4F1EA; --muted: #C9C2B3; --accent: #F2A07E; --accent-soft: #3A2A23;
-  }
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0; background: var(--paper); color: var(--text);
-  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 32px; }
-.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 600; font-size: 20px; }
-.brand img { width: 36px; height: 36px; border-radius: 9px; }
-.hero { text-align: center; margin: 0 0 32px; }
-.hero img { display: block; width: 200px; height: auto; margin: 0 auto 24px; border-radius: 24px;
-  box-shadow: 0 12px 32px rgba(23, 25, 30, 0.18); }
-@media (prefers-color-scheme: dark) { .hero img { box-shadow: 0 0 0 1px var(--border); } }
-.hero .updated { margin: 0; }
-.back { margin: 0 0 24px; }
-a { color: var(--accent); }
-.lang { font-size: 14px; }
-h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; }
-h2 { font-size: 20px; margin: 32px 0 8px; }
-.lead { color: var(--muted); font-size: 18px; margin: 0 0 16px; }
-.badge { display: inline-block; background: var(--accent-soft); color: var(--accent); border-radius: 999px; padding: 4px 12px; font-size: 14px; font-weight: 600; }
-.cards { display: grid; gap: 12px; margin-top: 32px; }
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; }
-.card h3 { margin: 0 0 4px; font-size: 17px; }
-.card p { margin: 0; color: var(--muted); }
-.legal p { margin: 0 0 10px; }
-.updated { color: var(--muted); font-size: 14px; }
-footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
-footer nav { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
-</style>
+<link rel="preload" href="../assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/site.css?v=e246802e">
+<script>try{var t=localStorage.getItem('tickami-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Tickami", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://tickami.fr/en/", "description": "Scan your invoices and receipts: Tickami reads the supplier, date, net amount, VAT and total, files them in personal or work spaces and works out your recoverable VAT. Free to start.", "inLanguage": "en", "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, {"@type": "Offer", "price": "4.99", "priceCurrency": "EUR", "name": "Tickami+"}], "publisher": {"@type": "Person", "name": "Mohamed El Moukhtar EL FANIDI"}}</script>
 </head>
 <body>
-<main>
-<header>
-  <a class="brand" href="../en/index.html"><img src="../logo-mark.png" alt="">Tickami</a>
-  <a class="lang" href="../index.html" hreflang="fr" lang="fr">Français</a>
+<a class="skip" href="#contenu">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../en/index.html"><img src="../logo-mark.png" alt="" width="34" height="34">Tickami</a>
+    <nav class="nav" aria-label="Menu"><a href="../en/features.html">Features</a><a href="../en/pricing.html">Pricing</a><a href="../en/faq.html">FAQ</a></nav>
+    <div class="header-tools">
+      <a class="lang-link" href="../index.html" hreflang="fr" lang="fr" aria-label="Version française"><svg class="lucide lucide-languages" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 8 6 6" /><path d="m4 14 6-6 2-3" /><path d="M2 5h12" /><path d="M7 2h1" /><path d="m22 22-5-10-5 10" /><path d="M14 18h6" /></svg>FR</a>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Switch theme (light or dark)" title="Switch theme (light or dark)"><svg class="lucide lucide-moon icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" /></svg><svg class="lucide lucide-sun icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2" /><path d="M12 20v2" /><path d="m4.93 4.93 1.41 1.41" /><path d="m17.66 17.66 1.41 1.41" /><path d="M2 12h2" /><path d="M20 12h2" /><path d="m6.34 17.66-1.41 1.41" /><path d="m19.07 4.93-1.41 1.41" /></svg></button>
+      <button class="icon-btn menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Menu"><svg class="lucide lucide-menu icon-menu" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg><svg class="lucide lucide-x icon-x" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+      <a class="btn btn-dark header-cta" href="../en/index.html#telecharger">Coming soon to iPhone</a>
+    </div>
+  </div>
 </header>
-<div class="hero"><img src="../logo.png" alt="Tickami" width="200" height="233"></div>
-<span class="badge">Coming soon to the App Store (iPhone)</span>
-<h1>Your invoices, sorted in one scan.</h1>
-<p class="lead">Tickami sorts your invoices and receipts: scanning, automatic reading, personal and work spaces, totals and VAT.</p>
-<div class="cards"><div class="card"><h3>Scan</h3><p>Take a photo of a receipt or import a PDF: supplier, date, amounts and VAT are read for you, with your consent.</p></div><div class="card"><h3>Sort</h3><p>File each invoice in your spaces — personal, work or other — and find it again with search.</p></div><div class="card"><h3>Track</h3><p>Monthly totals and recoverable VAT at a glance; export your data at any time.</p></div></div>
-<h2>Your data</h2>
-<p>No ads, no tracking, never sold. Hosted in the European Union. Delete your account instantly from the app. <a href="../en/privacy.html">Privacy Policy</a></p>
-<h2 id="support">Support and contact</h2>
-<p>A question, a problem or a request about your data? Write to us: <a href="mailto:contact@tickami.fr">contact@tickami.fr</a></p>
-<footer>
-  <nav>
-    <a href="../en/terms.html">Terms of Use</a>
-    <a href="../en/privacy.html">Privacy Policy</a>
-    <a href="mailto:contact@tickami.fr">contact@tickami.fr</a>
-  </nav>
-  Tickami is published by Mohamed El Moukhtar EL FANIDI, as an individual.
-</footer>
+<main id="contenu">
+<section class="hero"><div class="wrap">
+  <div class="hero-copy">
+    <span class="pill">For freelancers, business owners and individuals</span>
+    <h1 class="h-display">Your invoices, sorted in one scan.</h1>
+    <p class="lead">Scan your invoices and receipts: Tickami extracts the supplier, date, net amount, VAT and total, then files them by space, personal or work. Totals and recoverable VAT at a glance.</p>
+    <div class="hero-actions"><span class="store-btn is-soon" role="note"><svg class="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg><span><small>Coming soon to</small><strong>the App Store</strong></span></span><a class="link-arrow" href="../en/pricing.html">See pricing<svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a></div>
+    <div class="reassure"><span><svg class="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg>Free with up to 2 spaces</span><span><svg class="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg>Data hosted in Europe</span><span><svg class="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /><path d="m16 9-5.5 5.5L8 12" /></svg>No credit card</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="float-card float-done"><span class="dot"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg></span><span>Invoice read and filed in <b>Pro 1</b></span></div>
+    <div class="phone" aria-hidden="true"><div class="phone-screen"><div class="phone-canvas"><div style="width:390px;height:844px;background:#F4F1EA;position:relative;overflow:hidden">
+<div style="padding:58px 20px 0;display:flex;flex-direction:column;gap:20px">
+ <div style="display:flex;align-items:center;justify-content:space-between">
+  <div style="display:flex;align-items:center;gap:12px"><div style="width:40px;height:40px;border-radius:999px;background:#17191E;color:#FFFFFF;font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center">CL</div>
+  <div style="display:flex;flex-direction:column"><span style="font-size:13px;color:#5B5F68">Hello,</span><span class="serif" style="font-size:22px;line-height:1.1">Camille</span></div></div>
+  <div style="height:40px;padding:0 16px;border-radius:999px;background:#FFFFFF;border:1px solid #E3DED3;display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600">Sep 2026<svg class="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg></div>
+ </div>
+ <div style="background:#17191E;border-radius:16px;padding:20px;color:#F4F1EA;display:flex;flex-direction:column;gap:14px">
+  <span style="font-size:13px;color:#B9B5AC">Month total · all spaces</span>
+  <span class="serif" style="font-size:38px;line-height:1;font-variant-numeric:tabular-nums">€2,437.20</span>
+  <div style="display:flex;gap:3px;height:6px"><div style="flex-grow:842;background:#E0784F;border-radius:3px"></div><div style="flex-grow:1276;background:#7FA3E0;border-radius:3px"></div><div style="flex-grow:319;background:#6FBF98;border-radius:3px"></div></div>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">
+   <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:700">47</span><span style="font-size:12px;color:#B9B5AC">invoices</span></div>
+   <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:700">€265.82</span><span style="font-size:12px;color:#B9B5AC">Recoverable VAT</span></div>
+   <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:17px;font-weight:700;color:#F2A07E">5</span><span style="font-size:12px;color:#B9B5AC">to check</span></div>
+  </div>
+ </div>
+ <div style="display:flex;align-items:center;justify-content:space-between"><span class="serif" style="font-size:21px">My spaces</span><span style="font-size:14px;font-weight:600;color:#B4461F">Manage</span></div>
+ <div style="display:flex;gap:10px"><div style="flex-shrink:0;width:146px;background:#FFFFFF;border:1px solid #E3DED3;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:6px"><div style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600"><span style="width:9px;height:9px;border-radius:999px;background:#B4461F"></span>Personal</div><span class="serif" style="font-size:22px">€842.30</span><span style="font-size:12px;color:#5B5F68">21 invoices · 1 to check</span></div><div style="flex-shrink:0;width:146px;background:#FFFFFF;border:1px solid #E3DED3;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:6px"><div style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600"><span style="width:9px;height:9px;border-radius:999px;background:#2D55A0"></span>Pro 1</div><span class="serif" style="font-size:22px">€1,276.00</span><span style="font-size:12px;color:#5B5F68">18 invoices · 3 to check</span></div><div style="flex-shrink:0;width:146px;background:#FFFFFF;border:1px solid #E3DED3;border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:6px"><div style="display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600"><span style="width:9px;height:9px;border-radius:999px;background:#2F6E55"></span>Pro 2</div><span class="serif" style="font-size:22px">€318.90</span><span style="font-size:12px;color:#5B5F68">8 invoices · 1 to check</span></div></div>
+ <div style="display:flex;align-items:center;justify-content:space-between"><span class="serif" style="font-size:21px">Latest scans</span><span style="font-size:14px;font-weight:600;color:#B4461F">See all</span></div>
+ <div style="display:flex;flex-direction:column">
+  <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #E3DED3">
+   <div style="width:40px;height:40px;border-radius:10px;background:#EDE7DC;display:flex;align-items:center;justify-content:center"><svg class="lucide lucide-hotel" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 22v-6.57" /><path d="M12 11h.01" /><path d="M12 7h.01" /><path d="M14 15.43V22" /><path d="M15 16a5 5 0 0 0-6 0" /><path d="M16 11h.01" /><path d="M16 7h.01" /><path d="M8 11h.01" /><path d="M8 7h.01" /><rect x="4" y="2" width="16" height="20" rx="2" /></svg></div>
+   <div style="flex-grow:1;display:flex;flex-direction:column;gap:2px"><span style="font-size:15px;font-weight:600">Hôtel Le Relais — Lyon</span><span style="font-size:12px;color:#5B5F68;display:flex;align-items:center;gap:6px"><span style="width:7px;height:7px;border-radius:999px;background:#2D55A0"></span>Pro 1 · Sep 23</span></div>
+   <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px"><span style="font-size:15px;font-weight:700">€184.00</span><span style="font-size:11px;font-weight:600;color:#9A3A18;background:#F7E1D6;border-radius:999px;padding:2px 8px">To check</span></div>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #E3DED3">
+   <div style="width:40px;height:40px;border-radius:10px;background:#EDE7DC;display:flex;align-items:center;justify-content:center"><svg class="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M16 10a4 4 0 0 1-8 0" /><path d="M3.103 6.034h17.794" /><path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z" /></svg></div>
+   <div style="flex-grow:1;display:flex;flex-direction:column;gap:2px"><span style="font-size:15px;font-weight:600">Boulangerie du Marché</span><span style="font-size:12px;color:#5B5F68;display:flex;align-items:center;gap:6px"><span style="width:7px;height:7px;border-radius:999px;background:#B4461F"></span>Personal · Sep 22</span></div>
+   <span style="font-size:15px;font-weight:700">€12.40</span>
+  </div>
+ </div>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:84px;background:#FFFFFF;border-top:1px solid #E3DED3;display:flex;align-items:flex-start;justify-content:space-around;padding-top:10px;font-size:11px;color:#5B5F68"><div style="display:flex;flex-direction:column;align-items:center;gap:4px;color:#17191E;font-weight:600"><svg class="lucide lucide-house" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>Home</div><div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><svg class="lucide lucide-receipt" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 17V7" /><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" /><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /></svg>Invoices</div><div style="width:56px;height:56px;margin-top:-26px;border-radius:999px;background:#B4461F;color:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 16px rgba(180,70,31,0.35)"><svg class="lucide lucide-scan-line" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7 12h10" /></svg></div><div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><svg class="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m21 21-4.34-4.34" /><circle cx="11" cy="11" r="8" /></svg>Search</div><div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><svg class="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" /></svg>Profile</div></div>
+</div></div></div></div>
+    <div class="float-card float-vat"><small>Recoverable VAT · Sept.</small><strong>€265.82</strong><em>Work spaces Pro 1 and Pro 2</em></div>
+  </div>
+</div></section>
+
+<section class="section section-white"><div class="wrap">
+  <div class="section-head"><span class="eyebrow">How it works</span><h2 class="h-section">Three steps, no typing.</h2></div>
+  <div class="grid grid-3"><div class="card on-paper"><span class="icon-tile"><svg class="lucide lucide-scan-line" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 7V5a2 2 0 0 1 2-2h2" /><path d="M17 3h2a2 2 0 0 1 2 2v2" /><path d="M21 17v2a2 2 0 0 1-2 2h-2" /><path d="M7 21H5a2 2 0 0 1-2-2v-2" /><path d="M7 12h10" /></svg></span><span class="step">1 · Scan</span><h3>One invoice or a whole pile.</h3><p>Automatic edge detection, burst mode to scan receipt after receipt, PDF and photo import.</p></div><div class="card on-paper"><span class="icon-tile"><svg class="lucide lucide-receipt-text" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 16H8" /><path d="M14 8H8" /><path d="M16 12H8" /><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z" /></svg></span><span class="step">2 · Check</span><h3>AI reads, you approve.</h3><p>Supplier, date, net amount, VAT by rate, total: everything is pre-filled. Doubtful invoices are flagged “to check”.</p></div><div class="card on-paper"><span class="icon-tile"><svg class="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="M18 17V9" /><path d="M13 17V5" /><path d="M8 17v-3" /></svg></span><span class="step">3 · Track</span><h3>Your figures, month by month.</h3><p>Monthly total, breakdown by space, recoverable VAT and CSV or ZIP export for your accountant.</p></div></div>
+</div></section>
+
+<section class="section"><div class="wrap feature">
+  <div class="feature-visual"><div class="phone" aria-hidden="true"><div class="phone-screen dark"><div class="phone-canvas"><div style="width:390px;height:844px;background:#17191E;position:relative;overflow:hidden">
+<div style="position:absolute;top:56px;left:20px;right:20px;display:flex;align-items:center;justify-content:space-between;color:#F4F1EA">
+ <span style="font-size:15px;font-weight:600">Cancel</span>
+ <div style="display:flex;background:rgba(255,255,255,0.12);border-radius:999px;padding:3px;font-size:13px;font-weight:600"><span style="padding:6px 12px;border-radius:999px;background:#F4F1EA;color:#17191E">One invoice</span><span style="padding:6px 12px">Burst</span></div>
+</div>
+<div style="position:absolute;top:120px;left:70px;width:250px;height:300px">
+ <div style="position:absolute;left:22px;top:18px;width:206px;height:262px;background:#F4F1EA;border-radius:8px;transform:rotate(-3deg);padding:18px;box-sizing:border-box;display:flex;flex-direction:column;gap:8px">
+  <span class="serif" style="font-size:15px">Hôtel Le Relais</span>
+  <span style="height:6px;width:120px;background:#D8D2C4;border-radius:3px"></span><span style="height:6px;width:90px;background:#D8D2C4;border-radius:3px"></span>
+  <div style="flex-grow:1"></div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:#5B5F68"><span>HT</span><span>€153.33</span></div>
+  <div style="display:flex;justify-content:space-between;font-size:11px;color:#5B5F68"><span>TVA 20 %</span><span>€30.67</span></div>
+  <div style="display:flex;justify-content:space-between;font-size:13px;font-weight:700"><span>Total TTC</span><span>€184.00</span></div>
+ </div>
+ <div style="position:absolute;left:0;right:0;top:150px;height:2px;background:#E0784F;box-shadow:0 0 12px #E0784F"></div>
+ <span style="position:absolute;width:34px;height:34px;left:0;top:0;border-left:3px solid #E0784F;border-top:3px solid #E0784F;border-radius:4px 0 0 0"></span><span style="position:absolute;width:34px;height:34px;right:0;top:0;border-right:3px solid #E0784F;border-top:3px solid #E0784F;border-radius:0 4px 0 0"></span><span style="position:absolute;width:34px;height:34px;left:0;bottom:0;border-left:3px solid #E0784F;border-bottom:3px solid #E0784F;border-radius:0 0 0 4px"></span><span style="position:absolute;width:34px;height:34px;right:0;bottom:0;border-right:3px solid #E0784F;border-bottom:3px solid #E0784F;border-radius:0 0 4px 0"></span>
+</div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:400px;background:#F4F1EA;border-radius:24px 24px 0 0;padding:14px 20px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:12px">
+ <span style="align-self:center;width:40px;height:5px;border-radius:3px;background:#D8D2C4"></span>
+ <div style="display:flex;align-items:center;justify-content:space-between"><span class="serif" style="font-size:22px">Analysis complete</span><span style="font-size:12px;font-weight:600;color:#2F6E55;background:#DCEDE4;border-radius:999px;padding:4px 10px">6 fields read</span></div>
+ <div style="background:#FFFFFF;border:1px solid #E3DED3;border-radius:14px;display:flex;flex-direction:column">
+  <div style="display:flex;justify-content:space-between;padding:11px 14px;font-size:14px;border-bottom:1px solid #E3DED3"><span style="color:#5B5F68">Supplier</span><span style="font-weight:600">Hôtel Le Relais</span></div>
+  <div style="display:flex;justify-content:space-between;padding:11px 14px;font-size:14px;border-bottom:1px solid #E3DED3"><span style="color:#5B5F68">Date</span><span style="font-weight:600">09/23/2026</span></div>
+  <div style="display:flex;justify-content:space-between;padding:11px 14px;font-size:14px;border-bottom:1px solid #E3DED3"><span style="color:#5B5F68">Net · VAT 20%</span><span style="font-weight:600">€153.33 · €30.67</span></div>
+  <div style="display:flex;justify-content:space-between;padding:11px 14px;font-size:14px;font-size:15px"><span style="color:#5B5F68">Total incl. VAT</span><span style="font-weight:700">€184.00</span></div>
+ </div>
+ <span style="font-size:13px;font-weight:600;color:#5B5F68">Spaces</span>
+ <div style="display:flex;gap:8px">
+  <span style="height:34px;padding:0 12px;border-radius:999px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;border:1px solid #E3DED3;background:#FFFFFF;color:#5B5F68"><span style="width:8px;height:8px;border-radius:999px;background:#B4461F"></span>Personal</span>
+  <span style="height:34px;padding:0 12px;border-radius:999px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;background:#17191E;color:#FFFFFF"><span style="width:8px;height:8px;border-radius:999px;background:#7FA3E0"></span>Pro 1</span>
+  <span style="height:34px;padding:0 12px;border-radius:999px;display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;background:#17191E;color:#FFFFFF"><span style="width:8px;height:8px;border-radius:999px;background:#6FBF98"></span>Pro 2</span>
+ </div>
+ <div style="flex-grow:1"></div>
+ <span style="height:52px;border-radius:12px;background:#B4461F;color:#FFFFFF;font-size:16px;font-weight:600;display:flex;align-items:center;justify-content:center">Approve invoice</span>
+</div>
+</div></div></div></div></div>
+  <div class="feature-copy">
+    <span class="eyebrow" style="margin:0">Scan & automatic reading</span>
+    <h2 class="h-section">No more typing. Tickami reads the invoice for you.</h2>
+    <p class="lead">A photo is enough: artificial intelligence recognises the document and fills in the fields, with your consent. You always have the final say.</p>
+    <ul class="check-list"><li><span class="check"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg></span><span>Invoices, receipts, credit notes and quotes, as PDF or photo</span></li><li><span class="check"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg></span><span>VAT broken down by rate, net + VAT = total check</span></li><li><span class="check"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg></span><span>Duplicate detection and invoices to check</span></li><li><span class="check"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg></span><span>Offline? Scans are sent as soon as you are back online</span></li></ul>
+    <a class="link-arrow" href="../en/features.html">All features<svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+  </div>
+</div></section>
+
+<section class="section section-sand"><div class="wrap feature reverse">
+  <div class="feature-copy">
+    <span class="eyebrow" style="margin:0">Spaces</span>
+    <h2 class="h-section">Personal, Pro 1, Pro 2… every activity gets its own space.</h2>
+    <p class="lead">Each space has its own colour, totals and export. Work spaces work out your recoverable VAT.</p>
+    <div class="note-card"><span class="icon-tile sm"><svg class="lucide lucide-building-2" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 12h4" /><path d="M10 8h4" /><path d="M14 21v-3a2 2 0 0 0-4 0v3" /><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2" /><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /></svg></span><div><h3>One invoice, several companies</h3><p>Running more than one business? Link the same invoice to several work spaces, no split to calculate. It is only counted once in the overall total.</p></div></div>
+  </div>
+  <div class="feature-visual"><div class="phone" aria-hidden="true"><div class="phone-screen"><div class="phone-canvas"><div style="width:390px;height:844px;background:#F4F1EA;padding:58px 20px 24px;box-sizing:border-box;display:flex;flex-direction:column;gap:16px;overflow:hidden">
+ <div style="display:flex;align-items:center;justify-content:space-between"><svg class="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m15 18-6-6 6-6" /></svg><span style="font-size:13px;font-weight:600;color:#5B5F68">3 spaces</span></div>
+ <span class="serif" style="font-size:32px;line-height:1.1">My spaces</span>
+ <span style="font-size:15px;color:#5B5F68;line-height:1.45">Keep your invoices apart by activity. Each space has its own totals and export.</span>
+ <div style="background:#FFFFFF;border:1px solid #E3DED3;border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:12px"><span style="width:12px;height:12px;border-radius:999px;background:#B4461F"></span><div style="flex-grow:1;display:flex;flex-direction:column;gap:2px"><span style="font-size:16px;font-weight:600">Personal</span><span style="font-size:13px;color:#5B5F68">Personal · 21 invoices</span></div><span style="color:#5B5F68"><svg class="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span></div>
+ <div style="background:#FFFFFF;border:1.5px solid #17191E;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px">
+  <span style="font-size:13px;font-weight:600;color:#5B5F68">Space name</span>
+  <div style="height:48px;border-radius:12px;background:#F4F1EA;border:1px solid #E3DED3;display:flex;align-items:center;padding:0 14px;font-size:16px;font-weight:600">Pro 1</div>
+  <span style="font-size:13px;font-weight:600;color:#5B5F68">Type</span>
+  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;background:#EDE7DC;border-radius:12px;padding:4px">
+   <div style="height:40px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;color:#5B5F68">Personal</div>
+   <div style="height:40px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600;background:#FFFFFF;border-radius:9px">Work · VAT</div>
+  </div>
+  <span style="font-size:13px;font-weight:600;color:#5B5F68">Colour</span>
+  <div style="display:flex;gap:12px"><span style="width:36px;height:36px;border-radius:999px;background:#B4461F"></span><span style="width:36px;height:36px;border-radius:999px;background:#2D55A0;box-shadow:0 0 0 3px #FFFFFF,0 0 0 5px #17191E"></span><span style="width:36px;height:36px;border-radius:999px;background:#2F6E55"></span><span style="width:36px;height:36px;border-radius:999px;background:#7B4FA6"></span><span style="width:36px;height:36px;border-radius:999px;background:#8A6A12"></span></div>
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-top:4px"><span style="font-size:14px;font-weight:600;color:#B4461F">Delete space</span><span style="height:44px;padding:0 18px;border-radius:12px;background:#17191E;color:#FFFFFF;font-size:15px;font-weight:600;display:flex;align-items:center">Done</span></div>
+ </div>
+ <div style="background:#FFFFFF;border:1px solid #E3DED3;border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:12px"><span style="width:12px;height:12px;border-radius:999px;background:#2F6E55"></span><div style="flex-grow:1;display:flex;flex-direction:column;gap:2px"><span style="font-size:16px;font-weight:600">Pro 2</span><span style="font-size:13px;color:#5B5F68">Pro · 8 invoices</span></div><span style="color:#5B5F68"><svg class="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /><path d="m15 5 4 4" /></svg></span></div>
+ <div style="height:48px;border-radius:14px;border:1.5px dashed #D8D2C4;display:flex;align-items:center;justify-content:center;gap:8px;font-size:15px;font-weight:600"><svg class="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="M12 5v14" /></svg>Add a space</div>
+</div></div></div></div></div>
+</div></section>
+
+<section class="section section-ink"><div class="wrap">
+  <div class="split-head"><div class="section-head" style="margin:0"><span class="eyebrow">Tracking</span><h2 class="h-section">Your spending, clear at a glance.</h2></div><p class="lead">Pick a period: Tickami adds up, breaks down and shows you what is left to check.</p></div>
+  <div class="grid grid-4"><div class="ink-card"><span class="bar" style="background:#E0784F"></span><h3>Monthly total</h3><p>Across all spaces, with the breakdown by space.</p></div><div class="ink-card"><span class="bar" style="background:#7FA3E0"></span><h3>Recoverable VAT</h3><p>Worked out automatically on your work spaces.</p></div><div class="ink-card"><span class="bar" style="background:#F2A07E"></span><h3>To check</h3><p>Incomplete or duplicate invoices, singled out in one tap.</p></div><div class="ink-card"><span class="bar" style="background:#6FBF98"></span><h3>Export for accounting</h3><p>Excel-ready CSV and a ZIP of supporting documents, by space and period.</p></div></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2 class="h-section" style="font-size:clamp(32px,3.8vw,44px)">Your data stays yours.</h2></div>
+  <div class="grid grid-3"><div class="trust-item"><svg class="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></svg><h3>Hosted in Europe</h3><p>Invoices and data stored in the European Union (Ireland), in private storage. No ads, never sold.</p></div><div class="trust-item"><svg class="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg><h3>You stay in control</h3><p>AI analysis only starts with your consent. Export your data or delete your account at any time, from the app.</p></div><div class="trust-item"><svg class="lucide lucide-lock-keyhole" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="16" r="1" /><rect x="3" y="10" width="18" height="12" rx="2" /><path d="M7 10V7a5 5 0 0 1 10 0v3" /></svg><h3>Simple, secure sign-in</h3><p>Apple, Google, Microsoft or a code sent by email. Optional Face ID lock.</p></div></div>
+  <p style="margin-top:32px"><a class="link-arrow" href="../en/privacy.html">Read the privacy policy<svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a></p>
+</div></section>
+
+<section class="section section-white"><div class="wrap">
+  <div class="section-head center"><span class="eyebrow">Pricing</span><h2 class="h-section">Simple, no commitment.</h2><p class="lead">Prices include VAT. Subscription managed by the App Store, cancel at any time.</p></div>
+  <div data-billing-root data-billing="monthly">
+<div class="plans">
+  <div class="plan">
+    <span class="plan-name">Free</span>
+    <div class="price"><strong>€0</strong></div>
+    <p class="sub">To discover Tickami.</p>
+    <ul><li><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>2 spaces (e.g. Personal + Work)</span></li><li><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Up to 10 invoices per space</span></li><li><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Scanning and AI reading</span></li><li><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Totals, recoverable VAT and exports</span></li></ul>
+    <a class="btn btn-outline btn-block" href="../en/index.html#telecharger">Start for free</a>
+  </div>
+  <div class="plan featured">
+    <span class="ribbon">No limits</span>
+    <span class="plan-name">Tickami+</span>
+    <div class="price price-monthly"><strong>€4.99</strong><span>/ month</span></div>
+    <div class="price price-yearly"><strong>€39.99</strong><span>/ year</span></div>
+    <p class="sub price-monthly">or €39.99 / year, just €3.33 a month</p>
+    <p class="sub price-yearly">just €3.33 a month, 33% less than monthly</p>
+    <ul><li><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Unlimited spaces</span></li><li><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Unlimited invoices</span></li><li><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>Everything in the Free plan</span></li><li><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg><span>7-day free trial</span></li></ul>
+    <a class="btn btn-accent btn-block" href="../en/index.html#telecharger">Try Tickami+</a>
+  </div>
+</div>
+<p class="plans-note">Prices for France, VAT included; the App Store shows the price for your country. The subscription is sold by Apple and managed in your Apple ID settings.</p>
+</div>
+  <p style="text-align:center;margin-top:16px"><a class="link-arrow" href="../en/pricing.html">Compare plans in detail<svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a></p>
+</div></section>
+
+<section class="section" id="support"><div class="wrap faq-layout">
+  <div><span class="eyebrow" style="margin:0">FAQ</span><h2 class="h-section">Frequently asked questions</h2><p class="lead" style="font-size:17px">Another question? Write to us at <a href="mailto:contact@tickami.fr">contact@tickami.fr</a>.</p>
+  <a class="link-arrow" href="../en/faq.html">All questions<svg class="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a></div>
+  <div><details class="faq"><summary>Which documents can I scan?<svg class="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg></summary><div class="answer"><p>Invoices, receipts, hotel or restaurant bills, credit notes and quotes, as a photo or file (PDF, JPG, PNG or HEIC, up to 10 MB).</p></div></details><details class="faq"><summary>Is my data sent to an AI?<svg class="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg></summary><div class="answer"><p>Only if you agree. Images or PDFs are then sent to Anthropic (Claude API) to be read, without your name or email; Anthropic does not use them to train its models. Without your consent, you enter the amounts yourself, and you can change your mind at any time in your profile.</p></div></details><details class="faq"><summary>Can I manage several companies?<svg class="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg></summary><div class="answer"><p>Yes: create one space per company and link an invoice to one or more spaces. It is only counted once in the overall total.</p></div></details><details class="faq"><summary>How do I send everything to my accountant?<svg class="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg></summary><div class="answer"><p>Export a space and a period as CSV (Excel-compatible), with a ZIP of supporting documents, then share them from your iPhone: Mail, AirDrop or Files.</p></div></details><details class="faq"><summary>How do I cancel?<svg class="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg></summary><div class="answer"><p>In your iPhone settings: tap your name, then Subscriptions. Your invoices stay viewable on the Free plan.</p></div></details></div>
+</div></section>
+
+<section class="section-cta" id="telecharger"><div class="wrap"><div class="cta-band">
+  <div><h2>File your first invoice today.</h2><p>Free to start. Coming soon to iPhone: write to <a href="mailto:contact@tickami.fr" style="color:#FFFFFF;text-decoration:underline">contact@tickami.fr</a> to hear about the launch.</p></div>
+  <span class="store-btn is-soon" role="note"><svg class="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" /><path d="M12 18h.01" /></svg><span><small>Coming soon to</small><strong>the App Store</strong></span></span>
+</div></div></section>
 </main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="../en/index.html"><img src="../logo-mark.png" alt="" width="34" height="34">Tickami</a>
+        <p>Your invoices, sorted in one scan.</p>
+      </div>
+      <div class="footer-cols">
+        <div><strong>Product</strong><a href="../en/features.html">Features</a><a href="../en/pricing.html">Pricing</a><a href="../en/faq.html">FAQ</a></div>
+        <div><strong>Legal</strong><a href="../en/legal-notice.html">Legal notice</a><a href="../en/privacy.html">Privacy Policy</a><a href="../en/terms.html">Terms of Use</a></div>
+        <div><strong>Contact</strong><a href="mailto:contact@tickami.fr">contact@tickami.fr</a><a href="../en/faq.html#contact">Support</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Tickami — published by Mohamed El Moukhtar EL FANIDI</span><span>Apple, App Store, iPhone and Face ID are trademarks of Apple Inc.</span></div>
+  </div>
+</footer>
+<script src="../assets/site.js?v=e246802e" defer></script>
 </body>
 </html>
