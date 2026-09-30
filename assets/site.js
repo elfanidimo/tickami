@@ -1,5 +1,20 @@
-// Site vitrine Tickami : thème clair/sombre, menu mobile, choix mensuel/annuel des tarifs.
-// Le thème choisi est seulement mémorisé dans le navigateur (localStorage), jamais envoyé.
+// Site vitrine Tickami : thème clair/sombre, menu mobile, choix mensuel/annuel des tarifs,
+// mesure d'audience. Le thème choisi est seulement mémorisé dans le navigateur (localStorage).
+// Mesure d'audience (voir mentions légales) : sans cookie, chaque page vue est signalée à la
+// fonction site-visit (chemin de la page et langue ; l'adresse IP est lue par le serveur).
+(function () {
+  if (location.hostname === 'tickami.fr' && navigator.webdriver !== true) {
+    try {
+      fetch('https://jymoktcrfwvzwfuftymo.supabase.co/functions/v1/site-visit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ page: location.pathname, lang: document.documentElement.lang }),
+        keepalive: true,
+      }).catch(function () { /* mesure facultative */ });
+    } catch (e) { /* mesure facultative */ }
+  }
+})();
+
 (function () {
   var root = document.documentElement;
   var KEY = 'tickami-theme';
