@@ -57,3 +57,17 @@
     });
   });
 })();
+
+// F94 : la capture simulée du tableau de bord (1280 × 800) suit la largeur de sa fenêtre.
+(function () {
+  var screens = document.querySelectorAll('.desk-screen');
+  if (!screens.length) return;
+  function fit() {
+    screens.forEach(function (screen) {
+      var canvas = screen.querySelector('.desk-canvas');
+      if (canvas) canvas.style.setProperty('--s', String(screen.clientWidth / 1280));
+    });
+  }
+  fit();
+  window.addEventListener('resize', fit);
+})();
