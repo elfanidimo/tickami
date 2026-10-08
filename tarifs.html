@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="preload" href="assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/site.css?v=41a06445">
+<link rel="stylesheet" href="assets/site.css?v=eb291291">
 <script>try{var t=localStorage.getItem('tickami-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}</script>
 </head>
 <body>
@@ -90,7 +90,7 @@
         <p>Vos factures, rangées en un scan.</p>
       </div>
       <div class="footer-cols">
-        <div><strong>Produit</strong><a href="fonctionnalites.html">Fonctionnalités</a><a href="tarifs.html">Tarifs</a><a href="faq.html">FAQ</a></div>
+        <div><strong>Produit</strong><a href="fonctionnalites.html">Fonctionnalités</a><a href="tarifs.html">Tarifs</a><a href="faq.html">FAQ</a><a href="newsletter.html">Newsletter</a></div>
         <div><strong>Légal</strong><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Politique de confidentialité</a><a href="cgu.html">Conditions d'utilisation</a></div>
         <div><strong>Contact</strong><a href="mailto:contact@tickami.fr">contact@tickami.fr</a><a href="faq.html#contact">Assistance</a></div>
       </div>
@@ -98,6 +98,30 @@
     <div class="footer-bottom"><span>© 2026 Tickami — édité par Mohamed El Moukhtar EL FANIDI</span><span>Apple, App Store, iPhone et Face ID sont des marques d'Apple Inc.</span></div>
   </div>
 </footer>
-<script src="assets/site.js?v=41a06445" defer></script>
+<div class="nl-backdrop" data-nl-backdrop hidden></div>
+<aside class="nl-panel" data-nl data-nl-panel role="dialog" aria-modal="false" aria-labelledby="nl-title" data-erroremail="Cette adresse e-mail ne semble pas valide." data-errorconsent="Cochez la case pour accepter de recevoir la lettre." data-errorbusy="Trop de demandes en ce moment. Réessayez dans un moment." data-errornetwork="La demande n&#x27;a pas pu être envoyée. Vérifiez votre connexion et réessayez." hidden>
+  <button class="icon-btn nl-close" type="button" data-nl-dismiss aria-label="Fermer sans m'inscrire"><svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+  <div data-nl-step="form">
+    <span class="nl-icon"><svg class="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></span>
+    <h2 id="nl-title" class="nl-title">Suivez les nouveautés de Tickami</h2>
+    <p class="nl-lead">Nouvelles fonctions, sortie sur l'App Store, conseils pour vos factures et votre TVA. Un e-mail par mois au plus.</p>
+    <form class="nl-form" data-nl-form novalidate>
+      <div class="nl-field"><label for="nlp-email">Adresse e-mail</label>
+        <input id="nlp-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="vous@exemple.fr"></div>
+      <div class="nl-trap" aria-hidden="true"><label for="nlp-website">Website</label><input id="nlp-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <label class="nl-consent"><input type="checkbox" name="consent" required><span>J'accepte de recevoir la lettre d'information de Tickami. Je peux me désinscrire à tout moment grâce au lien présent dans chaque e-mail. <a href="confidentialite.html">Politique de confidentialité</a></span></label>
+      <p class="nl-error" data-nl-error role="alert" hidden></p>
+      <button class="btn btn-accent nl-submit" type="submit" data-sending="Envoi…">Recevoir les nouveautés</button>
+    </form>
+    <button class="nl-decline" type="button" data-nl-dismiss>Non merci</button>
+  </div>
+  <div data-nl-step="done" hidden>
+    <span class="nl-icon nl-icon-ok"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg></span>
+    <h2 class="nl-title">Plus qu'une étape</h2>
+    <p class="nl-lead">Nous venons d'envoyer un e-mail à <strong data-nl-email></strong>. Cliquez sur le lien qu'il contient pour confirmer votre inscription.</p>
+    <button class="btn btn-outline" type="button" data-nl-close>Fermer</button>
+  </div>
+</aside>
+<script src="assets/site.js?v=eb291291" defer></script>
 </body>
 </html>

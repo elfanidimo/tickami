@@ -23,7 +23,7 @@
 <link rel="apple-touch-icon" href="../icon.png">
 <link rel="preload" href="../assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../assets/fonts/fraunces-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../assets/site.css?v=41a06445">
+<link rel="stylesheet" href="../assets/site.css?v=eb291291">
 <script>try{var t=localStorage.getItem('tickami-theme');if(t==='dark'||t==='light'){document.documentElement.setAttribute('data-theme',t)}}catch(e){}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Tickami", "operatingSystem": "iOS", "applicationCategory": "FinanceApplication", "url": "https://tickami.fr/en/", "description": "Scan your invoices and receipts: Tickami reads the supplier, date, net amount, VAT and total, files them in personal or work spaces and works out your recoverable VAT. Free to start.", "inLanguage": "en", "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, {"@type": "Offer", "price": "4.99", "priceCurrency": "EUR", "name": "Tickami+"}], "publisher": {"@type": "Person", "name": "Mohamed El Moukhtar EL FANIDI"}}</script>
 </head>
@@ -253,7 +253,7 @@
         <p>Your invoices, sorted in one scan.</p>
       </div>
       <div class="footer-cols">
-        <div><strong>Product</strong><a href="../en/features.html">Features</a><a href="../en/pricing.html">Pricing</a><a href="../en/faq.html">FAQ</a></div>
+        <div><strong>Product</strong><a href="../en/features.html">Features</a><a href="../en/pricing.html">Pricing</a><a href="../en/faq.html">FAQ</a><a href="../en/newsletter.html">Newsletter</a></div>
         <div><strong>Legal</strong><a href="../en/legal-notice.html">Legal notice</a><a href="../en/privacy.html">Privacy Policy</a><a href="../en/terms.html">Terms of Use</a></div>
         <div><strong>Contact</strong><a href="mailto:contact@tickami.fr">contact@tickami.fr</a><a href="../en/faq.html#contact">Support</a></div>
       </div>
@@ -261,6 +261,30 @@
     <div class="footer-bottom"><span>© 2026 Tickami — published by Mohamed El Moukhtar EL FANIDI</span><span>Apple, App Store, iPhone and Face ID are trademarks of Apple Inc.</span></div>
   </div>
 </footer>
-<script src="../assets/site.js?v=41a06445" defer></script>
+<div class="nl-backdrop" data-nl-backdrop hidden></div>
+<aside class="nl-panel" data-nl data-nl-panel role="dialog" aria-modal="false" aria-labelledby="nl-title" data-erroremail="This email address doesn’t look valid." data-errorconsent="Tick the box to agree to receive the newsletter." data-errorbusy="Too many requests right now. Please try again later." data-errornetwork="The request could not be sent. Check your connection and try again." hidden>
+  <button class="icon-btn nl-close" type="button" data-nl-dismiss aria-label="Close without subscribing"><svg class="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></button>
+  <div data-nl-step="form">
+    <span class="nl-icon"><svg class="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg></span>
+    <h2 id="nl-title" class="nl-title">Follow what’s new at Tickami</h2>
+    <p class="nl-lead">New features, App Store launch, tips for your invoices and VAT. At most one email a month.</p>
+    <form class="nl-form" data-nl-form novalidate>
+      <div class="nl-field"><label for="nlp-email">Email address</label>
+        <input id="nlp-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com"></div>
+      <div class="nl-trap" aria-hidden="true"><label for="nlp-website">Website</label><input id="nlp-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <label class="nl-consent"><input type="checkbox" name="consent" required><span>I agree to receive the Tickami newsletter. I can unsubscribe at any time with the link in every email. <a href="../en/privacy.html">Privacy policy</a></span></label>
+      <p class="nl-error" data-nl-error role="alert" hidden></p>
+      <button class="btn btn-accent nl-submit" type="submit" data-sending="Sending…">Get the news</button>
+    </form>
+    <button class="nl-decline" type="button" data-nl-dismiss>No thanks</button>
+  </div>
+  <div data-nl-step="done" hidden>
+    <span class="nl-icon nl-icon-ok"><svg class="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg></span>
+    <h2 class="nl-title">One more step</h2>
+    <p class="nl-lead">We just sent an email to <strong data-nl-email></strong>. Click the link inside to confirm your subscription.</p>
+    <button class="btn btn-outline" type="button" data-nl-close>Close</button>
+  </div>
+</aside>
+<script src="../assets/site.js?v=eb291291" defer></script>
 </body>
 </html>
